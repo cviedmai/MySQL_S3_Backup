@@ -1,7 +1,12 @@
 2 scripts to create a full backup and an incremental backup of a MySQL database into a S3 (Amazon AWS) bucket. They can be easily setup as cron tasks to be done daily.
 
-Original code examples from Paul Dowman's blog: http://pauldowman.com/
+MySQL binary logging must be enabled. For that make sure the MySQL config file (my.cnf normally under /etc/mysql/) has the following line in it:
 
+log_bin = /var/db/mysql/binlog/mysql-bin
+
+The path must match with that in the config.rb file.
+
+Original code examples from Paul Dowman's blog: http://pauldowman.com/
 Copyright 2009 Paul Dowman, "http://pauldowman.com/":http://pauldowman.com/
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
