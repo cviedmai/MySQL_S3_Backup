@@ -1,6 +1,4 @@
-h3. Code examples from Paul Dowman's blog
-
-These are the code examples for my blog posts which are available at "http://pauldowman.com/":http://pauldowman.com/
+Original code examples from Paul Dowman's blog: http://pauldowman.com/
 
 Copyright 2009 Paul Dowman, "http://pauldowman.com/":http://pauldowman.com/
 

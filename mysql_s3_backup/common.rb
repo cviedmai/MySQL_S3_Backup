@@ -17,4 +17,9 @@ end
 AWS::S3::Base.establish_connection!(:access_key_id => @aws_access_key_id, :secret_access_key => @aws_secret_access_key, :use_ssl => true)
 
 # It doesn't hurt to try to create a bucket that already exists
+begin
 AWS::S3::Bucket.create(@s3_bucket)
+# Mod by cviedmai to handle the exception in case the bucket already exists
+rescue AWS::S3::BucketAlreadyOwnedByYou => e
+  p "Using an already existing bucket"
+end
