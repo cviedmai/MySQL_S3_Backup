@@ -1,3 +1,5 @@
+2 scripts to create a full backup and an incremental backup of a MySQL database into a S3 (Amazon AWS) bucket. They can be easily setup as cron tasks to be done daily.
+
 Original code examples from Paul Dowman's blog: http://pauldowman.com/
 
 Copyright 2009 Paul Dowman, "http://pauldowman.com/":http://pauldowman.com/
